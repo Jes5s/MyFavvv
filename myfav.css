@@ -10,6 +10,10 @@ body{
     align-items: center;
 }
 
+.h1{
+    font-family:cursive
+}
+
 .eren{
     width: 500px;
     height: 500px;
@@ -36,4 +40,18 @@ body{
     opacity: 0;
     transition: opacity 0.5 ease;
 
+}
+
+.hover{
+    opacity: 0;
+    transition: opacity 0.5 ease;
+
+}
+
+.eren:hover .hover{
+    opacity: 1;
+}
+
+.eren:hover .default{
+    opacity: 0;
 }
