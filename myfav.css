@@ -11,15 +11,29 @@ body{
 }
 
 .eren{
-    width: 500px;
-    height: 500px;
-    display: flex;
-    background-image: url(erengif.gif);
-    
+    width: 200px;
+    height: 200px;
+    position: relative;
     border: 10px solid black;
     box-shadow: 2px 2px 10px rgba(red, green, blue, alpha);
+    overflow: hidden;
 }
 
-.eren img{
+.default{
+    width: 50%;
+    height: 50%;
     object-fit: cover;
+    transition: opacity 0.5 ease;
+}
+
+.hover{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    position:absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5 ease;
+
 }
